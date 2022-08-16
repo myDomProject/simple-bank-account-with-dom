@@ -7,7 +7,7 @@ document.getElementById('btn-login').addEventListener('click', function () {
 
     if(email === 'admin@email.com' && password === 'password'){
        document.getElementById('btn-login').onclick=function(){
-        location.href ='../bank-account.html'
+        location.href ='./bank-account.html'
        }
     }else{
         console.log('Invalid User');
