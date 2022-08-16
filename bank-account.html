@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Account Details</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body class="bg-teal-100">
+
+    <div class="container mx-auto">
+        <h1 class="text-4xl text-center my-10">Let's get some money !!</h1>
+        <div class="grid grid-cols-3 gap-3">
+            <div class="bg-teal-400 px-10 py-5 rounded-md">
+                <h3 class="text-2xl">Deposit</h3>
+
+
+                <!-- ================= -->
+                <div id="" class="text-4xl">$<span id="depositOutput">0</span></div>
+            </div>
+            <div class="bg-blue-400 px-10 py-5 rounded-md">
+                <h3 class="text-2xl">Withdraw</h3>
+
+                <!-- ================== -->
+                <div class="text-4xl">$<span id="withwdrawOutput">0</span></div>
+            </div>
+            <div class="bg-red-400 px-10 py-5 rounded-md">
+                <h3 class="text-2xl">Balence</h3>
+
+
+                <!-- ==================== -->
+                <div class="text-4xl">$<span id="balenceOutput">1200</span></div>
+            </div>
+        </div>
+        <div>
+            <div class="grid grid-cols-2 gap-3 my-5">
+                <div class="bg-green-400 py-4 px-8 rounded-lg text-center">
+                    <h2 class="text-3xl">Deposit</h2>
+
+                    <!-- ====== Deposit Input ===== -->
+                    <input class="py-2 px-5 rounded-md" type="number" name="deposit" id="depositInput"
+                        placeholder="$ Ammount yoy want to deoisite">
+
+                    <!-- ====== Deposit button ==== -->
+
+                    <button
+                        class="py-2 px-5 border border-black bg-white rounded-md mt-2 hover:bg-black hover:text-white"
+                        id="btnSubmitDiposit"> Deposit</button>
+                </div>
+
+
+
+                <div class="bg-indigo-400 py-4 px-8 rounded-lg text-center">
+                    <h2 class="text-3xl">Withdraw</h2>
+
+
+                    <!-- ====== Withdraw Input ====== -->
+
+
+                    <input class="py-2 px-5 rounded-md" type="number" id="withdrawInput"
+                        placeholder="$ You want to withdraw">
+
+                    <!-- ====== Withdraw Button ===== -->
+                    <button
+                        class="py-2 px-5 border border-black bg-white rounded-md mt-2 hover:bg-black hover:text-white"
+                        id="btnSubmitWithdraw">
+                        Wothdraw
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bank.js"></script>
+</body>
+
+</html>

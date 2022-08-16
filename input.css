@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    @font-face {
+        font-family: 'Gumela Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Gumela Regular'), url('Gumela.woff') format('woff');
+        }
+        body{
+            font-family: 'Gumela Regular';
+        }
+}
