@@ -38,13 +38,15 @@ document.getElementById('btnSubmitWithdraw').addEventListener('click', function 
     //convert string to number
     const balenceOutputNumber = parseFloat(balenceOutput.innerText);
     // Sum 
-    if (withdrawInputNumber > 0) {
+    if (withdrawInputNumber <= balenceOutputNumber ) {
         withdrawOutput.innerText = withdrawInputNumber + withdrawOutputNumber;
 
         //remove number after withdraw
         balenceOutput.innerText = balenceOutputNumber - withdrawInputNumber;
+    }else if(withdrawInputNumber > balenceOutputNumber){
+        alert("You can't withdraw over your balence");
     }else{
-        alert('Input valid number')
+        alert('Input valid number');
     }
 
 
